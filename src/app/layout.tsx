@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Click here <3",
-  description: "f** you",
+  title: "For you",
+  description: "Gift for you",
 };
 
 export default function RootLayout({
@@ -13,6 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/gift-svgrepo-com.svg" />
+      </head>
       <body>{children}</body>
     </html>
   );
